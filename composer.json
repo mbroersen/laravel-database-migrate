@@ -1,8 +1,8 @@
 {
     "name": "mbroersen/laravel-database-migrate",
-    "description": "shows query usage of your laravel application",
+    "description": "migrates project from existing database",
     "keywords": [
-        "socialblue",
+        "mbroersen",
         "laravel-database-migrate"
     ],
     "homepage": "https://github.com/mbroersen/laravel-database-migrate",
