@@ -4,7 +4,6 @@ namespace Mbroersen\LaravelDatabaseMigrate\Console\Commands;
 use Illuminate\Console\Command;
 use Mbroersen\LaravelDatabaseMigrate\Service\Database\Migrations\Creator;
 
-
 class CreateMigrations extends Command {
 
     /**

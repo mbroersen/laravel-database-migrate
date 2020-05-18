@@ -3,6 +3,7 @@
 namespace Mbroersen\LaravelDatabaseMigrate;
 
 use Illuminate\Support\ServiceProvider;
+use Mbroersen\LaravelDatabase\Console\Commands\CreateMigrations;
 
 class LaravelDatabaseMigrateDataProvider extends ServiceProvider
 {
@@ -11,7 +12,11 @@ class LaravelDatabaseMigrateDataProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                Mbroersen\LaravelDatabaseMigrate\Console\Commands\CreateMigrations::class,
+            ]);
+        }
 
     }
 
