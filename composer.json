@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mbroersen\\LaravelDatabaseMigrate": "src"
+            "Mbroersen\\LaravelDatabaseMigrate\\": "src"
         }
     },
     "autoload-dev": {
