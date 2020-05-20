@@ -1,0 +1,48 @@
+{
+    "name": "mbroersen/laravel-database-migrate",
+    "description": "migrates project from existing database",
+    "keywords": [
+        "mbroersen",
+        "laravel-database-migrate"
+    ],
+    "homepage": "https://github.com/mbroersen/laravel-database-migrate",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mark",
+            "email": "mark.broersen@outlook.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mbroersen\\LaravelDatabaseMigrate\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mbroersen\\LaravelDatabaseMigrate\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mbroersen\\LaravelDatabaseMigrate\\LaravelDatabaseMigrateServiceProvider"
+            ]
+        }
+    }
+}
